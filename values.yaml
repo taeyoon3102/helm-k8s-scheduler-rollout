@@ -26,6 +26,8 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: 
 
+
+
 #### serviceAccountSecret.yaml ####
 serviceAccountSecret:
   create: false
@@ -33,10 +35,9 @@ serviceAccountSecret:
     eks.amazonaws.com/role-arn:
   name:
 
-strategy: 
-  blueGreen:
-    activeService: ty-test-rolloutapp
-    autoPromotionEnabled: false
+blueGreen:
+  activeService: ty-test-rolloutapp
+  autoPromotionEnabled: false
 
 #### _helpers.tpl ####
 schedule: ty-schedule-office-hours
