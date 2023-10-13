@@ -33,6 +33,11 @@ serviceAccountSecret:
     eks.amazonaws.com/role-arn:
   name:
 
+strategy: 
+  blueGreen:
+    activeService: ty-test-rolloutapp
+    autoPromotionEnabled: false
+
 #### _helpers.tpl ####
 schedule: ty-schedule-office-hours
 
