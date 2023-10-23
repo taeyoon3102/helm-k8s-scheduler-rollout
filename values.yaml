@@ -37,7 +37,7 @@ serviceAccountSecret:
 
 blueGreen:
   activeService: ty-test-rolloutapp
-  autoPromotionEnabled: false
+  autoPromotionEnabled: true
 
 #### _helpers.tpl ####
 schedule: test-office-hours
