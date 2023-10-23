@@ -40,7 +40,7 @@ blueGreen:
   autoPromotionEnabled: true
 
 #### _helpers.tpl ####
-schedule: test-office-hours
+schedule: ty-schedule-office-hours
 
 
 # podSecurityContext: {}
