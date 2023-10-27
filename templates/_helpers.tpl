@@ -50,7 +50,7 @@ Selector labels
 app.kubernetes.io/name: {{ include "comm-be.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 Schedule: {{ .Values.schedule }}
-Replicas: {{ .Values.replicaCount }}
+replicas: {{ .Values.replicaCount }}
 name: {{ .Release.Name }}
 {{- end -}}
 
