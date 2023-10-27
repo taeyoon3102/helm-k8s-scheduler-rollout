@@ -36,7 +36,7 @@ serviceAccountSecret:
   name:
 
 blueGreen:
-  activeService: ty-test-rolloutapp
+  activeService: ty-app-rollout
   autoPromotionEnabled: true
 
 #### _helpers.tpl ####
