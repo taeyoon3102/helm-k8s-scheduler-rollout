@@ -39,8 +39,8 @@ blueGreen:
   activeService: ty-app-rollout
   autoPromotionEnabled: true
 
-#### _helpers.tpl ####
-schedule: ty-schedule-office-hours
+#### scheduler for metadata annotations ####
+Schedule: ty-schedule-office-hours
 
 
 # podSecurityContext: {}

@@ -49,8 +49,6 @@ Selector labels
 {{- define "comm-be.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "comm-be.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
-Schedule: {{ .Values.schedule }}
-replicas: {{ .Values.replicaCount | quote }}
 name: {{ .Release.Name }}
 {{- end -}}
 

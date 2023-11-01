@@ -2,8 +2,10 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   name: {{ include "comm-be.fullname" . }}
-  labels:
-    {{- include "comm-be.labels" . | nindent 4 }}
+  annotaions:
+    {{- if .Values.Schedule }}
+    Schedule: {{ .Values.Schedule }}
+    {{- end }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
