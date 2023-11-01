@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   name: {{ include "comm-be.fullname" . }}
-  annotaions:
+  annotations:
     {{- if .Values.Schedule }}
     Schedule: {{ .Values.Schedule }}
     {{- end }}
