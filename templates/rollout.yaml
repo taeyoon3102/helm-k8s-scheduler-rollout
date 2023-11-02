@@ -5,6 +5,7 @@ metadata:
   annotations:
     {{- if .Values.Schedule }}
     Schedule: {{ .Values.Schedule }}
+    replicas: {{ .Values.replicaCount}}
     {{- end }}
 spec:
   replicas: {{ .Values.replicaCount }}
